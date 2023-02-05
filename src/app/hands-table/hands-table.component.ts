@@ -8,7 +8,7 @@ import Handsontable from 'handsontable';
 })
 export class HandsTableComponent implements OnInit {
   public hotInstance!: Handsontable;
-  private data = [
+  public data = [
     {
       id: 1,
       name: 'Nike Air Zoom Pegasus 38 Running Shoes',
@@ -66,6 +66,15 @@ export class HandsTableComponent implements OnInit {
       productionDate: 'July 2021',
     },
   ];
+  public colHeaders = [
+    'Id',
+    'Name',
+    'Description',
+    'Made In',
+    'Production Date',
+  ];
+
+  licenseKey = 'non-commercial-and-evaluatio';
 
   ngOnInit(): void {
     this.generateTable();
@@ -76,10 +85,11 @@ export class HandsTableComponent implements OnInit {
       document.getElementById('hot-table') as HTMLElement,
       {
         data: this.data,
-        colHeaders: ['Name', 'Description', 'Made In', 'Production Date'],
+        colHeaders: ['Id', 'Name', 'Description', 'Made In', 'Production Date'],
         rowHeaders: true,
         manualColumnResize: true,
         manualRowResize: true,
+        licenseKey: 'non-commercial-and-evaluatio',
       }
     );
   }
