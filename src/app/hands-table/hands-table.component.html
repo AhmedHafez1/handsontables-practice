@@ -1,7 +1,8 @@
+<h1 ahHighlight>Welcome to ABCD</h1>
 <hot-table
   [data]="data"
   [colHeaders]="colHeaders"
   [licenseKey]="licenseKey"
 ></hot-table>
 
-<h2 *ahFor="let header of colHeaders">{{ header }}</h2>
+<h2 *ahFor="let header of colHeaders" ahColorClick="red">{{ header }}</h2>
