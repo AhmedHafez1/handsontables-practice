@@ -9,6 +9,8 @@ import { HotTableModule } from '@handsontable/angular';
 import { AhForDirective } from './ah-for.directive';
 import { AhHighlightDirective } from './ah-highlight.directive';
 import { AhColorClickDirective } from './ah-color-clic.directive';
+import { RecordsComponent } from './records/records.component';
+import { HoldToDeleteDirective } from './hold-to-delete.directive';
 
 // register Handsontable's modules
 registerAllModules();
@@ -19,6 +21,8 @@ registerAllModules();
     AhForDirective,
     AhHighlightDirective,
     AhColorClickDirective,
+    RecordsComponent,
+    HoldToDeleteDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, HotTableModule],
   providers: [],
