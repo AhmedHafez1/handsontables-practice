@@ -11,6 +11,7 @@ import { AhHighlightDirective } from './ah-highlight.directive';
 import { AhColorClickDirective } from './ah-color-clic.directive';
 import { RecordsComponent } from './records/records.component';
 import { HoldToDeleteDirective } from './hold-to-delete.directive';
+import { NewRecordsComponent } from './new-records/new-records.component';
 
 // register Handsontable's modules
 registerAllModules();
@@ -23,6 +24,7 @@ registerAllModules();
     AhColorClickDirective,
     RecordsComponent,
     HoldToDeleteDirective,
+    NewRecordsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HotTableModule],
   providers: [],

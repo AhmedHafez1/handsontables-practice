@@ -1,2 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~handsontable/dist/handsontable.full.css";
+
+.record {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  transform: scale(1.1);
+}
+
+.delete-progress {
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #0f0;
+}
+
+.record-name {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  flex-grow: 1;
+}
